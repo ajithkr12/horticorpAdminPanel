@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useContext,useEffect, useState} from 'react'
 import "./style.css"
 
+
+import {ContextConsumer} from '../utils/context'
+
 const Orderdetails = () => {
+    
+    const contextValues = useContext(ContextConsumer);
 
-
-
+    console.log(contextValues);
 
     return (
         <div className="container">
