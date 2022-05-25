@@ -9,35 +9,24 @@ const EditPrice = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="order-container col-lg-6 col-md-6">
-                    <div className="item-container col-lg-12 col-md-12">
-                    <div className="item-box col-lg-12 col-md-12">
-                        <div className="content-container col-lg-12 col-md-12">
-                            <p>Payar</p>
-                            <p>250 gms</p>
-                            <p>4</p>
-                            <p>100/-</p>
+                        <div className="edit-content-container col-lg-12 col-md-12">
+                            <div class="group col-lg-4 col-md-4 col-sm-4 col-xm-4">
+                                <p>Tomato</p>
+                            </div>
+                            <div class="group col-lg-4 col-md-4 col-sm-4 col-xm-4">
+                                <input type="checkbox" id="stock" name="stock" value="true"/><label for="stock">Out of the Stock</label>
+                            </div>
+                            <div class="group col-lg-4 col-md-4 col-sm-4 col-xm-4">      
+                                <input type="text" placeholder="Price/Unit" required/>
+                            </div>
                         </div>
-                        <div className="content-container col-lg-12 col-md-12">
-                            <p>Tomato</p>
-                            <p>250gms</p>
-                            <p>2</p>
-                            <p>30/-</p>
-                        </div>
-                        </div>
-                        
-                    </div>
-
-                    <div className="content-container col-lg-12 col-md-12">
-                    <button type="button">Click Me</button>
-                    <button type="button">Click Me!</button>
-                    <button type="button">Click Me!</button>
-            
-                        </div>
-                </div>
-                
 
             </div>
+
+
+                    <div className="button-container col-lg-12 col-md-12">
+                        <button type="button">Submit</button>
+                    </div>
 
         </div>
     )

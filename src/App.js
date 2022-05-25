@@ -1,17 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
-import SelectionbarOrder from "./components/SelectionbarOrder"
-import Orderdetails from "./components/Orderdetails";
-import Navbar from "./components/Navbar"
-import EditPrice from "./components/EditPrice.js";
+import EditProduct from "./pages/EditProduct"
+import ViewOrder from "./pages/Vieworder";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      {/* <Navbar/> */}
-      <SelectionbarOrder/>
-      <Orderdetails/>
-    </div>
+<>
+      <Router>
+        <Switch>
+          <Route path='/' exact component={ViewOrder} />
+          <Route path='/editproduct' component={EditProduct} />
+
+        </Switch>
+      </Router>
+    </>
   );
 }
 
